@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<body>
+    <div>
+        <p>Cập nhật sinh viên</p>
+        <form action="/updateLinhKien" method="post"> 
+            <input type="text" name="tenLinhKien" value="<%= linhKien.tenLinhKien%>">
+            <br/><br/>
+            <input type="text" name="donViTinh" value="<%= linhKien.donViTinh%>">
+            <br/><br/>
+            <input type="text" name="gia" value="<%= linhKien.gia%>">
+            <input type="text" name="thongSoKyThuat" value="<%= linhKien.thongSoKyThuat %>">
+            <input type="hidden" name="maLinhKien" value="<%= linhKien.maLinhKien %>">
+            <input type="submit" value="Cập nhật sinh viên">
+        </form>
+    </div>
+</body>
+</html>
